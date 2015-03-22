@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/" >
+        <file>Resources/BLACK_C.png</file>
+        <file>Resources/BLACK_J.png</file>
+        <file>Resources/BLACK_M.png</file>
+        <file>Resources/BLACK_P.png</file>
+        <file>Resources/BLACK_S.png</file>
+        <file>Resources/BLACK_X.png</file>
+        <file>Resources/BLACK_Z.png</file>
+        <file>Resources/RED_C.png</file>
+        <file>Resources/RED_J.png</file>
+        <file>Resources/RED_M.png</file>
+        <file>Resources/RED_P.png</file>
+        <file>Resources/RED_S.png</file>
+        <file>Resources/RED_X.png</file>
+        <file>Resources/RED_Z.png</file>
+        <file>Resources/background.jpg</file>
+    </qresource>
+</RCC>

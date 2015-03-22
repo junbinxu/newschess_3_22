@@ -1,0 +1,13 @@
+INPUT(
+./release\chess.o
+./release\chessman.o
+./release\chessscene.o
+./release\communicate.o
+./release\gamewidgetbase.o
+./release\main.o
+./release\moc_chess.o
+./release\moc_chessscene.o
+./release\moc_communicate.o
+./release\moc_gamewidgetbase.o
+./release\qrc_chess.o
+);

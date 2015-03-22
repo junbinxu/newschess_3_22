@@ -1,0 +1,13 @@
+INPUT(
+./debug\chess.o
+./debug\chessman.o
+./debug\chessscene.o
+./debug\communicate.o
+./debug\gamewidgetbase.o
+./debug\main.o
+./debug\moc_chess.o
+./debug\moc_chessscene.o
+./debug\moc_communicate.o
+./debug\moc_gamewidgetbase.o
+./debug\qrc_chess.o
+);

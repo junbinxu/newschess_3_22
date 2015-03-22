@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GameWidgetBaseClass</class>
+ <widget class="QWidget" name="GameWidgetBaseClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>GameWidgetBase</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>660</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'宋体'; font-size:11pt; font-weight:600;&quot;&gt;发送消息:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditSendmesage">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>660</y>
+     <width>281</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEditReciveMessge">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>230</y>
+     <width>351</width>
+     <height>411</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>50</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'宋体'; font-size:12pt; font-weight:600;&quot;&gt;当前步数:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLCDNumber" name="lcdNumber_step">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>50</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widgetChessboard" native="true">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>60</y>
+     <width>594</width>
+     <height>648</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLCDNumber" name="lcdNumber_alltime">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>110</y>
+     <width>101</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>110</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'宋体'; font-size:12pt; font-weight:600; color:#000000;&quot;&gt;总计时:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>170</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'宋体'; font-size:12pt; font-weight:600;&quot;&gt;思考剩余时间:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLCDNumber" name="lcdNumber_current">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>170</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="value" stdset="0">
+    <double>10.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>50</y>
+     <width>75</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>110</y>
+     <width>75</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>NEW GAME</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
