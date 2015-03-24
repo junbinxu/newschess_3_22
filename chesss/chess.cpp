@@ -78,6 +78,7 @@ void chess::on_listWidget_itemDoubleClicked(QListWidgetItem* item)
 	communicate->sendGameComSend(item->text().split("--").at(1));
 }
 
+//Chessman::BLACK黑棋type为0 Chessman::RED 红棋type为1
 void chess::invite(QString str)
 {
     int i = QMessageBox::question(this , tr("invite"),tr("now start play chess!") ,QMessageBox::Ok, QMessageBox::Cancel);
@@ -90,7 +91,7 @@ void chess::invite(QString str)
 		gameWidgetBase->scene->clear();
 		gameWidgetBase->scene->initialChessmanState();
 		gameWidgetBase->scene->userState = true;
-		gameWidgetBase->scene->userType = Chessman::RED;		
+        gameWidgetBase->scene->userType = Chessman::RED;
 		gameWidgetBase->scene->initialRedChessman();
         gameWidgetBase->timer->start(1000);
 		gameWidgetBase->showFullScreen();
@@ -103,6 +104,7 @@ void chess::invite(QString str)
 }
 
 //邀请结果反馈
+//Chessman::BLACK黑棋type为0 Chessman::RED 红棋type为1
 void chess::isInvite(QString str)
 {
     //对方接受邀请
@@ -112,7 +114,7 @@ void chess::isInvite(QString str)
 		gameWidgetBase->scene->clear();	
 		gameWidgetBase->scene->initialChessmanState();
 		gameWidgetBase->scene->userState = false;
-		gameWidgetBase->scene->userType = Chessman::BLACK;			
+        gameWidgetBase->scene->userType = Chessman::BLACK;
 		gameWidgetBase->scene->initialBlackChessman();
         gameWidgetBase->timer->start(1000);
 

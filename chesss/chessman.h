@@ -17,7 +17,7 @@ class Chessman : public QGraphicsPixmapItem
 {
 	//Q_OBJECT
 public:
-		enum Type{BLACK,RED};
+        enum Type{BLACK,RED};//Chessman::BLACKºÚÆåtypeÎª0 Chessman::RED ºìÆåtypeÎª1
 public:
 	Chessman(const QPixmap & pixmap,int x = 0,int y = 0);
 	~Chessman();

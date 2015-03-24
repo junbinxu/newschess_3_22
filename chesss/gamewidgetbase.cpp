@@ -3,7 +3,7 @@
 #include <QScrollBar>
 #include <QMessageBox>
 #include <QGridLayout>
-
+#include <QDebug>
 
 GameWidgetBase::GameWidgetBase(QWidget *parent)
 	: QWidget(parent)
@@ -137,9 +137,20 @@ void GameWidgetBase::on_pushButton_2_clicked()
 
     //new game 重新开始游戏 ？？ todo 还得继续做
     this->scene->clear();//清除屏幕现有棋谱，再重新绘制棋子
+    qDebug()<<this->scene->userType;
+    int type = this->scene->userType;
+    if(type == 0){
+        //黑棋
+        this->scene->initialBlackChessman();
+
+    }else if(type == 1){
+        //红棋
+         this->scene->initialRedChessman();
+    }
 //    this->scene->initialChessmanState();
 //    this->scene->initialRedChessman();
 //    this->scene->initialBlackChessman();
 //    this->showFullScreen();
+
 }
 
