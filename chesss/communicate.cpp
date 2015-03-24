@@ -12,7 +12,7 @@ using namespace std;
 Communicate::Communicate(QObject *parent)
 	: QObject(parent)
 {
-	port = 8989;
+    port = 8989;
 	udp = new QUdpSocket();
     //qDebug()<<udp;
     //if(! udp->bind(port))//xujunbin
@@ -168,6 +168,7 @@ bool Communicate::getIP()
 {
 	QList<QHostAddress> broadcastAddresses;
     QList<QHostAddress> ipAddresses;
+
 	 foreach (QNetworkInterface interface, QNetworkInterface::allInterfaces()) {
         foreach (QNetworkAddressEntry entry, interface.addressEntries()) {
             QHostAddress broadcastAddress = entry.broadcast();
@@ -179,6 +180,7 @@ bool Communicate::getIP()
             }
         }
     }
+
 	hostAddress =  ipAddresses.at(0);
 /*
     QList<QNetworkInterface> interface = QNetworkInterface::allInterfaces();
@@ -229,7 +231,7 @@ void Communicate::sendBroadcastMeg()
 	sendStr.append(hostAddress.toString());
 	sendAddress = QHostAddress::Broadcast;
 	sendMessage(sendStr);
-   // qDebug()<<sendStr;
+    qDebug()<<sendStr;
 
 }
 
@@ -243,6 +245,7 @@ void Communicate::recBroadcastMeg()
 	sendStr.append("--");
 	sendStr.append(hostAddress.toString());
 	sendMessage(sendStr);
+    qDebug()<<sendStr;
 }
 
 void Communicate::sendGameComSend(const QString &str)
